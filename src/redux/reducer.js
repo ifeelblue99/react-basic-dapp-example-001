@@ -10,13 +10,13 @@ export default function reducer(state = initialState, action) {
       return {
         isConnected: true,
         address: action.walletAddress,
-        balance: action.ethBalance,
+        balance: 'can not get right now...',
       };
     case 'disconnected':
       return {
         isConnected: false,
         address: '',
-        balance: 'can not get right now...',
+        balance: '',
       };
     default:
       return state;
